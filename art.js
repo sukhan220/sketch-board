@@ -33,6 +33,10 @@ window.addEventListener("load",()=>{
     can.addEventListener("mousedown",start);
     can.addEventListener("mouseup",end);
     can.addEventListener("mousemove",draw);
+    
+    can.addEventListener("touchmove", draw);
+    can.addEventListener("touchstart",start);
+    can.addEventListener("touchend",end);
 
     cont.font = "30px Arial";
     cont.strokeStyle = "indigo";
