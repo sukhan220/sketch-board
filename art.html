@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html l>
+  <head>
+    <meta charset="utf-8">
+    <title>Shahab Art Bord</title>
+    <style>
+        canvas{
+        border:10px solid darkorchid;
+        display: block;
+        background-color: white;
+        border-radius: 20px;
+        
+        
+        }
+       #toolbox{
+           width: 100%;
+           height: 50px;
+           padding: 10px;
+           position: fixed;
+           top: 0;
+           background-color: solid;
+           color: white;
+           float: left;
+           margin: 5px;
+
+       }
+       *{
+           box-sizing: border-box;
+           -moz-box-sizing: border-box;
+           font-family: sans-serif;
+           user-select: none;
+           -webkit-user-select: none;
+           -ms-user-select: none;
+       }
+       #brush{
+
+          background-color:lightskyblue;
+          width: 210px;
+          height: 50px;
+          color: black;
+          padding: 10px;
+          border:2px solid darkred;
+          border-radius: 10px;
+          margin: 5px;
+          
+       }
+       .brushControl{
+           width: 30px;
+           height: 30px;
+           background-color: lightcoral;
+           display: inline-block;
+           text-align: center;
+           padding: 5px;
+           border-radius: 5px;
+
+       }
+
+       .swatch {
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            box-shadow: inset 0px 1px 0px  rgba(255,255,255,0.5),0px 2px 2px rgba(0,0,0,0.5);
+            margin-left: 10px;
+            display: inline-block;
+            background-color: royalblue;
+            padding: 10px;
+
+       }
+       .swatch.active{
+           border: 2px solid white;
+           box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
+       } 
+    </style>
+  </head>
+  <body style='margin: 0;'>
+     <div id="toolbox">
+        <div id="colors">
+            <div class="swatch " style="background-color: red;"></div>
+            <div class="swatch " style="background-color: green;"></div>
+            <div class="swatch " style="background-color: yellow;"></div>
+            <div class="swatch " style="background-color: purple;"></div>
+            <div class="swatch " style="background-color: blue;"></div>
+            <div class="swatch " style="background-color: violet;"></div>
+            <div class="swatch " style="background-color: gray"></div>
+            <div class="swatch " style="background-color: black"></div>
+            <div class="swatch " style="background-color: indigo"></div>
+            <div class="swatch " style="background-color: white"></div>
+            <div class="swatch " style="background-color: tomato"></div>
+        </div>
+        <div id="brush">
+            Brush Size: <span id="SIZE">10</span>
+            <div id="plus" class="brushControl">+</div>
+            <div id="minus" class="brushControl">-</div>
+
+        </div>
+        <h1 style="color:thistle;">SHAHAB!</h1>
+     </div>
+     <canvas id="Canvas"></canvas>
+     <script src="art.js"></script>
+     <script src="color.js"></script>
+     <script src=Brush.js></script>
+  </body>
+</html>
